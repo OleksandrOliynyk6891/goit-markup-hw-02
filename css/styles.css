@@ -1,21 +1,36 @@
+:root {
+    --primari-text-col:#212121;
+    --secondari-text-col:#757575;
+    --primari-background-color:#ffffff;
+    --secondari-background-color:#2F303A;
+    --hov-foc-color:#2196F3;
+    --logo-color:#2196F3;
+    --tagline-color:#ffffff;
+    --logo-color-text:#000000;
+    --botton-color:#2196F3;
+    --botton-text-color:#ffffff;
+    --footer-link-color:rgba(255, 255, 255, 0.6);
+    --section-background-color:  #F5F4FA;
+}
+
 body {
-    color: #212121;
-    background-color: #ffffff;
-    font-family: 'Roboto';
+    color: var(--primari-text-col);
+    background-color: var(--primari-background-color);
+    font-family: 'Roboto','Raleway','Times New Roman', sans-serif;
     font-style: normal;
 }
 
 .logo {
-    color: #000000;
+    color: var(--logo-color-text);
     font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.2;
 }
 a {text-decoration: none;
 }
 .logo>span {
-    color: #2196F3;
+    color: var(--logo-color);
 }
 .list {
     list-style: none;
@@ -23,130 +38,136 @@ a {text-decoration: none;
 .nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-    color: #212121;
+    line-height: 1.1;
+    color:var(--primari-text-col)
 }
 .nav-link:hover,
 .nav-link:focus {
-color: #2196F3;
+color: var(--hov-foc-color);
+}
+.geo-link:hover,
+.geo-link:focus {
+    color: var(--hov-foc-color);
+}
+.mail-link:hover,
+.mail-link:focus {
+    color: var(--hov-foc-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+    color: var(--hov-foc-color);
 }
 .cont-link a {
-    color: #757575;
+    color: var(--secondari-text-col);
 }
-h1 {
+.main-title {
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    color: #FFFFFF;
-    background-color: #2F303A;
+    line-height: 1.4;
+    color: var(--tagline-color);
+    background-color:var(--secondari-background-color);
 }
 
 .button {
-    color: #FFFFFF;
+    color: var(--botton-text-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    background-color: #2196F3;
-}
-h2 {
-    color: #212121;
+    line-height: 1.9;
+    background-color: var(--botton-color);
     font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    cursor: pointer;
+    font-family: inherit;
 }
 .features-subtitle {
-    color: #212121;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.4;
     text-transform: uppercase;
 }
 .features-text {
-    color: #757575;
+    color: var(--secondari-text-col);
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 } 
 .work-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.15;
     text-align: center;
-    color: #212121;
 }
 .team {
-    background-color: #F5F4FA;
+    background-color:var(--section-background-color);
 }
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.15;
     text-align: center;
-    color: #212121;
 }
 
 .team .list-item {
-    background-color: #FFFFFF;
+    background-color: var(--primari-background-color);
 }
 
 .team-subtitle {
-    color: #212121;
     font-weight: 500;
-
 }
 .team-subtitle {
     font-weight: 400;
-    color: #757575;
-    
+    color: var(--secondari-text-col);
 }
 .team-text, .team-subtitle {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.2;
     text-align: center;
 }
 .foot {
-    background: #2F303A;
+    background: var(--secondari-background-color);
 }
 .address a {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
 }
 .geo-link {
-    color: #FFFFFF;
+    color: var(--tagline-color);
 }
 .mail-link, .tel-link {
-color: rgba(255, 255, 255, 0.6)
-    }
+color:var(--footer-link-color)
+}
     
 /* portfolio */
+
 .filter-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.6;
     text-align: center;
-    color: #212121;
+    color:var(--primari-text-col);
+    cursor: pointer;
+    font-family: inherit;
 }
 .filter-button:hover,
 .filter-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--botton-text-color);
+    background-color: var(--hov-foc-color);
 }
 .examples-title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;
+    line-height: 2;
+    color: var(--primari-text-col);
 }
 .examples-text {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
-    color: #757575;
+    line-height: 2;
+    color: var(--secondari-text-col);
+}
+.examples-link:hover,
+.examples-link:focus {
+    background-color: var(--hov-foc-color);
 }
