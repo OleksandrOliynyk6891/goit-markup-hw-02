@@ -6,26 +6,33 @@
     --hov-foc-color:#2196F3;
     --logo-color:#2196F3;
     --tagline-color:#ffffff;
-    --logo-color-text:#000000;
+    --logo-color-text:#ffffff;
     --botton-color:#2196F3;
     --botton-text-color:#ffffff;
+    --button-hov-foc:#188CE8;
     --footer-link-color:rgba(255, 255, 255, 0.6);
     --section-background-color:  #F5F4FA;
 }
-
+.visualli-hiden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 body {
     color: var(--primari-text-col);
     background-color: var(--primari-background-color);
-    font-family: 'Roboto','Raleway','Times New Roman', sans-serif;
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo {
     color: var(--logo-color-text);
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 a {text-decoration: none;
 }
@@ -38,12 +45,16 @@ a {text-decoration: none;
 .nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
-    color:var(--primari-text-col)
+    line-height: 1.14;
+    color:var(--primari-text-col);
+    letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:focus {
 color: var(--hov-foc-color);
+}
+.list .nav-link.current{
+    color: var(--hov-foc-color);
 }
 .geo-link:hover,
 .geo-link:focus {
@@ -65,37 +76,45 @@ color: var(--hov-foc-color);
     text-align: center;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.4;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
     color: var(--tagline-color);
-    background-color:var(--secondari-background-color);
 }
-
+.hiro {
+    background-color: var(--secondari-background-color);
+}
 .button {
     color: var(--botton-text-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.9;
-    background-color: var(--botton-color);
-    font-weight: 700;
+    line-height: 1.88;
+    background-color:var(--botton-color);
+    letter-spacing: 0.06em;
     cursor: pointer;
     font-family: inherit;
+}
+.button:hover,
+.button:focus {
+background-color: var(--button-hov-foc);
 }
 .features-subtitle {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .features-text {
     color: var(--secondari-text-col);
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 } 
 .work-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.15;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .team {
@@ -104,7 +123,8 @@ color: var(--hov-foc-color);
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.15;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -114,24 +134,27 @@ color: var(--hov-foc-color);
 
 .team-subtitle {
     font-weight: 500;
+    color: var(--primari-text-col);
 }
-.team-subtitle {
-    font-weight: 400;
+.team-text {
     color: var(--secondari-text-col);
 }
 .team-text, .team-subtitle {
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .foot {
     background: var(--secondari-background-color);
 }
-.address a {
+.address {
     font-style: normal;
-    font-weight: 400;
+}
+.address a {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 .geo-link {
     color: var(--tagline-color);
@@ -145,7 +168,8 @@ color:var(--footer-link-color)
 .filter-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
     text-align: center;
     color:var(--primari-text-col);
     cursor: pointer;
@@ -160,14 +184,12 @@ color:var(--footer-link-color)
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--primari-text-col);
 }
 .examples-text {
     font-size: 16px;
     line-height: 2;
+    letter-spacing: 0.03em;
     color: var(--secondari-text-col);
-}
-.examples-link:hover,
-.examples-link:focus {
-    background-color: var(--hov-foc-color);
 }
