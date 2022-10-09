@@ -6,7 +6,8 @@
     --hov-foc-color:#2196F3;
     --logo-color:#2196F3;
     --tagline-color:#ffffff;
-    --logo-color-text:#ffffff;
+    --logo-color-text:#000000;
+    --logo-color-futer:#FFFFFF;
     --botton-color:#2196F3;
     --botton-text-color:#ffffff;
     --button-hov-foc:#188CE8;
@@ -15,9 +16,14 @@
 }
 .visualli-hiden {
     position: absolute;
-    clip: rect(0 0 0 0);
+    white-space: nowrap;
     width: 1px;
     height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     margin: -1px;
 }
 body {
@@ -28,7 +34,7 @@ body {
 
 .logo {
     color: var(--logo-color-text);
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
@@ -192,4 +198,7 @@ color:var(--footer-link-color)
     line-height: 2;
     letter-spacing: 0.03em;
     color: var(--secondari-text-col);
+}
+.foot > a {
+    color: var(--logo-color-futer);
 }
